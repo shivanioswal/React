@@ -1,5 +1,6 @@
 import Greet from "../components/Greet";
 import { Component } from "react";
+import "./App.css";
 
 class App extends Component
 {
@@ -8,7 +9,7 @@ class App extends Component
     return(
       <div className="App">
         <Greet/> 
-        {/* We have called this component using an arrow function which is function component  */}
+        {/* We have called this component using an arrow function which is a function component  */}
       </div>
     )
   }
