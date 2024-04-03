@@ -13,7 +13,7 @@ class Message extends Component
     {
         this.setState({
             // Gives new state of the component
-            message: "Thank you for subscribing"
+            message: "Thank you for subscribing to our content"
         })
     }
     render()
