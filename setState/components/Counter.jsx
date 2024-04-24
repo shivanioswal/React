@@ -13,11 +13,17 @@ class Counter extends Component
     }
     increment()
     {
-        this.setState({
-            count: this.state.count + 1
+        // this.setState({
+        //     count: this.state.count + 1
 
-        })
-        console.log(this.state.count)
+        // },()=>{
+        //     console.log('callback value',this.state.count)
+        // })
+        this.setState(prevState=>({
+            count: prevState.count+1
+    }))
+        console.log(this.state.count) 
+        //outside the setState method. Synchronous console.log 0 comes from here
     }
     render()
     {
